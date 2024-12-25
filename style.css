@@ -1,0 +1,564 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* Navbar */
+
+.navbar{
+    height:4vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    background-color:white;
+    border-bottom:2px solid black;
+    border-radius:3px;
+    position:sticky;
+    top:1px;
+    z-index:1
+}
+
+.nav-left{
+    font-size:3vh;
+    color:indianred;
+    margin:.5vw;
+    cursor: pointer;
+    display:flex;
+    justify-content:center;
+    align-items:Center;
+
+}
+
+.home{
+    font-size:3vh;
+    transition:font-size 0.7s ease;
+    
+}
+
+.home:hover{
+    font-size:3.4vh
+}
+
+.nav-right{
+    font-size:3vh;
+    color:indianred;
+    margin:.5vw;
+    display: flex;
+    flex-direction: row;
+    gap:14px;
+    justify-content:center;
+    align-items:center;
+}
+
+.project_tag{
+    margin:-5px;
+}
+
+.nav-right i{
+    font-size:3vh;
+    cursor: pointer;
+}
+
+.nav-right p{
+    cursor:pointer
+}
+.C{
+    transition: font-size 0.7s ease;
+    font-size:3vmin
+}
+
+.C:hover{
+    font-size:3.4vh
+}
+
+.P{
+    transition: font-size 0.7s ease;
+    font-size:3vmin
+}
+
+.P:hover{
+    font-size:3.4vh
+}
+
+.download{
+    color:indianred;
+    transition: font-size 0.7s ease;
+    font-size:3vmin
+}
+
+.download:hover{
+    color:#45a049;
+    font-size: 3.4vh;
+    /* animation:smooth; */
+}
+
+.instag{
+    color:indianred;
+    font-size:3vh;
+    transition: font-size 0.7s ease;
+}
+
+.instag:hover{
+    /* color:#45a049; */
+    font-size: 3.4vh;
+}
+/* .search{
+    border:2px solid indianred;
+    border-radius:5px;
+    background-color: black;
+    color:indianred;
+}
+
+.search i{
+    font-size: 2.5vh;
+    margin-left:5px;
+    cursor: pointer;
+}
+
+input{
+    font-size:3vh;
+    border:0px none;
+    background-color: black;
+    border-left:2px solid indianred;
+    color:indianred;
+} */
+
+.share{
+    color:black;
+    cursor: pointer;
+    transition: font-size 0.7s ease;
+}
+
+.share:hover{
+    font-size:3.4vh;
+    color:#45a049
+}
+.github{
+    color:black;
+    background-color:white;
+    border-radius:50%;
+    height:fit-content;
+    width:fit-content;
+    transition: font-size 0.7s ease;
+}
+
+.github:hover{
+    /* color:#45a049; */
+    font-size: 3.4vh;
+}
+/* Hero */
+.hero{
+    height:90vh;
+    width:100vw;
+    position:relative;      /*This is used to set image and p tag position same */
+    display: flex;
+    flex-direction: column;
+    border-top:2px solid black;
+    border-bottom: 2px solid black;
+    border-radius:3px;
+    z-index:5;
+}
+
+.hero_img{
+    height:90vh;
+    width:100vw;
+    position:absolute;  /*This is used to set the position of object to absolute that is uniform*/
+    z-index: 2;
+    object-fit: cover;;
+}
+
+.my_img{
+    z-index:2;
+    width:500px;
+    height:500px;
+    border:2px solid none;
+    border-radius:50%;
+    object-fit: cover;
+    /* position:fixed;   /*This fixed tag is used to fix image for every scroll*/
+    position: absolute;
+    top:10vh;
+    right:20vmin;
+    /* bottom:4rem; */
+    rotate:22deg;
+}
+
+.bio_name{
+    z-index:2;
+    width: 47vw;
+    height:20vh;
+    font-size:4rem;
+    position: relative;
+    top:20vmin;
+    left:10vW;
+    font-weight:700;
+    /* overflow:hidden; */
+}
+
+.bio_details{
+    z-index:2;
+    width: 47vw;
+    height:20vh;
+    font-size:2rem;
+    position: relative;
+    top:30vh;
+    left:10vW;
+    font-weight:700;
+}
+
+
+
+/* Skills (Logo) */
+
+.Skills{
+    width:100%;
+    border-bottom: 2px solid black;
+}
+.logo{
+    height:20vh;
+    background-color: white;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+
+.logo i{
+    font-size: 80px;
+    color:aquamarine;
+    display:flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+.logo p{
+    font-size:20px;
+    color:black;
+    text-align: center;
+}
+
+/* Qual */
+
+.Edu_Qua{
+    padding-bottom:0px;
+    border-bottom:2px solid black
+}
+
+.qual{
+    width:100vw;
+    height:20vh;
+    font-size:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:20px;
+    margin:20px 0px;
+    /* margin:20px 0px 0px 0px; */     
+}
+
+.deg{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+    width:30vw;
+    border:2px solid grey;
+    background-color: brown;
+    color:white
+}
+.deg ul{
+    color:white;
+}
+
+.deg h3{
+    color:white;
+
+}
+
+
+/* Certification */
+
+.certificate{
+    display:flex;
+    justify-content: baseline;
+    border-bottom: 2px solid black;    
+
+}
+
+.certificate ol{
+    width:100vw;
+    /* height:20vh; */
+    display:flex;
+    flex-direction:column;
+    margin:10px 30px;
+    font-size:20px;
+
+}
+
+.certificate details{
+    height: 40px;
+    width:100vw;
+    overflow:auto;
+    /* display:flex;
+    flex-direction: column; */
+}
+
+.certificate li{
+    margin-top:10px;
+    width:47vw;
+    
+}
+
+.certificate a{
+    margin-top:10px;
+    color:palevioletred
+}
+
+/* Section  (Projects) */
+
+
+.projects{
+    
+    border-bottom: 2px solid black;
+    border-radius:3px;
+    padding-bottom:20px
+}
+.project_1{
+    width:47vw;
+    height:48vh;
+    object-fit:cover;
+    border:2px solid black;
+    margin:10px 8px; 
+    border-radius:5px
+}
+
+.projects{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2vw;
+}
+
+h2{
+    width:100vw;
+    height:4vh;
+    background-color:indianred
+}
+
+details{
+    cursor:pointer;
+    max-width:47vw;
+    
+
+}
+details[open]{
+    height:12vh;
+    overflow:scroll;
+}
+
+.more{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+}
+/* contacts */
+
+.contacts{
+    width:200px;
+    /* height:500px; */
+}
+
+#myForm{
+    width:100vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin:25px 0px;
+}
+#box{
+    width:30vw;
+    height:50vh;
+    border:2px solid grey;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    background-color:#1994 ;
+}
+
+#box input{
+    width:250px;
+    color:black
+}
+
+#box label{
+    font-size:30px;
+    margin-top:12px
+}
+
+#box p{
+    display:flex;
+    justify-content: center;
+    width:20px;
+    margin-top:12px;
+    gap:20px;
+}
+
+#box button{
+    margin-top: 12px;
+    border-radius:10px;
+    padding:5px;
+    font-size:20px;
+    background-color:burlywood;
+
+}
+
+#box input{
+    background-color: aquamarine;
+    border:2px solid grey;
+}
+
+#box p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* details{
+    font-size:20px;
+} */
+
+/* Footer */
+
+.foot{
+    padding-top:20px;
+    padding-bottom:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+    color:white;
+
+}
+.foot p{
+    font-size:20px;
+}
+
+.foot a{
+    color:blueviolet
+}
+
+
+/* JS functionality css */
+
+.shadow{
+    opacity:0.2;
+}
+
+.hidden{
+    position:fixed;
+    top:4vh;
+    width:100vw;
+    height:100vh;
+    /* opacity:1; */
+    display: flex;
+    justify-content:center;
+    align-items:center;;
+    z-index:5;
+    visibility:hidden;
+    /* background-color:rgb(198, 198, 154); */
+    /* fill-opacity: 0; */
+}
+
+.share_tab{
+    width:20vw;
+    height:20vh;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    fill: opacity 200%;;
+    /* justify-content:center; */
+    border:2px solid black; 
+    background-color:rgb(234, 204, 204);
+    border-radius:5px;
+}
+
+.share_tab p{
+    margin:10px;
+    font-weight:900;
+    font-size:30px;
+}
+
+.insta{
+    color:indianred;
+    font-size:3vh;
+    transition:font-size 0.7s ease;
+}
+
+.insta:hover{
+    font-size:3.4vh
+}
+.share-menu{
+    display:flex;
+    margin-top:30px;
+    font-size:18px;
+    gap:20px;
+}
+
+.share-menu i{
+    font-size:4vh;
+}
+
+.xx{
+    display:flex;
+    right:0;
+    cursor:pointer;
+    position:relative;
+    left:9.3vw;
+    top:2px;
+    font-weight: bold;
+    font-size:2vmin;
+    transition:font-size 0.7s ease;
+}
+
+.xx:hover{
+    color:red;
+    font-size:2.4vmin
+}
+
+/* Scroll */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* download btn */
+
+/* Style for the button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.instagram{
+    width:100vw;
+    height:40%;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+}
+
+.instagram img{
+    width:20%;
+    height:20%;
+}
